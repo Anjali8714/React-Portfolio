@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import { IoIosArrowRoundUp } from "react-icons/io";
+
 
 const Projects = () => {
   return (
@@ -20,9 +23,30 @@ const Projects = () => {
         </div>
 
         <div className='md:w-1/2 flex flex-col gap-6'>
-          <img src="/Images/tca.png" alt="Threads-clone-app" className='rounded-xl w-[1000px] h-[300px] object-cover shadow-lg ' />
-          <img src="/Images/ll.png" alt="Labour-link" className='rounded-xl  w-[1000px] h-[300px] object-cover shadow-lg ' />
-          <img src="/Images/pfe.png" alt="Pets-food-Ecommerce" className='rounded-xl  w-[1000px] h-[300px] object-cover shadow-lg ' />
+        <Link to='/projects/thread-clone'>
+        <img src="/Images/tca.png" alt="Threads-clone-app" className='rounded-xl w-full h-[300px] object-cover shadow-lg ' />
+        <div className="flex text-white">
+          <h6>Click the image</h6>
+          <IoIosArrowRoundUp className='mt-1 size-6' />
+        </div>       
+        </Link>
+
+          <Link to='/projects/labour-link'>
+          <img src="/Images/ll.png" alt="Labour-link" className='rounded-xl  w-full h-[300px] object-cover shadow-lg ' />
+          <div className="flex text-white">
+          <h6>Click the image</h6>
+          <IoIosArrowRoundUp className='mt-1 size-6' />
+        </div>
+          </Link>
+          
+          <Link to='/projects/pet-food'>
+          <img src="/Images/pfe.png" alt="Pets-food-Ecommerce" className='rounded-xl  w-full h-[300px] object-cover shadow-lg ' />
+          <div className="flex text-white">
+          <h6>Click the image</h6>
+          <IoIosArrowRoundUp className='mt-1 size-6' />
+        </div>
+          </Link>
+          
         </div>
       </div>
 

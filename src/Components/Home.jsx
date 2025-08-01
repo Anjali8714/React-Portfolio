@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import BlurText from "./BlurText";
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <section id="home">
     <div className=" w-full min-h-screen flex justify-baseline pt-40">
-      <div className="flex flex-col font-bold text-4xl pt-40 pl-20 gap-y-4 text-white">
+      <div className="flex flex-col font-bold text-4xl pt-40 pl-4 md:pl-20 gap-y-4 text-white">
       <h6>Hello,</h6>
       <p>
         I'm <span className="text-purple-500">ANJALI</span>
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="ml-36 mt-40">
+      <div className="ml-0 md:ml-36 mt-20 md:mt-40">
         <div id="box-model" className="w-20 h-20 bg-purple-500 rounded-xl"></div>
         <div id="box-model1" className="w-20 h-20 bg-purple-500 rounded-xl"></div>
       </div>
